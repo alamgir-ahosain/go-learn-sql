@@ -1,4 +1,4 @@
-## 📂 Project Structure
+##  Project Structure
 ```plaintext
 GO-LEARN-SQL/
 ├── Mysql/                          # MySQL implementation
@@ -21,3 +21,17 @@ GO-LEARN-SQL/
 ├── go.sum                          # Go dependencies checksums
 └── readme.md                       # Project documentation
 ```
+
+##  Database Setup
+
+```sql
+CREATE DATABASE goDB;
+USE goDB;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT NOT NULL,
+    sid VARCHAR(128) NOT NULL,
+    name VARCHAR(128) NOT NULL,
+    cgpa DECIMAL(5,2),
+    PRIMARY KEY (`id`)
+);
