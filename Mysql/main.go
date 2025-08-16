@@ -16,8 +16,8 @@ func main() {
 	if err != nil {
 		log.Fatal("Error opening DB:", err)
 	}
-	defer db.Close()
-
+	defer db.Close() //close the DB connection when main exist
+	
 	// Test the connection immediately
 	if err := db.Ping(); err != nil {
 		log.Fatal("Error connecting to DB:", err)
