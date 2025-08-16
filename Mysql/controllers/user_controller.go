@@ -90,9 +90,24 @@ func UpdateUser(id int, NewName string) {
 	rowsAffected, er := row.RowsAffected()
 	CheckError(er)
 	if rowsAffected == 0 {
-		fmt.Println("No user found with that ID ")
+		fmt.Println("No user found with that id ")
 	} else {
 		fmt.Println("User Updated Succesfully")
 
 	}
+}
+
+// _______________________DELETE________________________________
+func DeleteUser(id int) {
+	query := "delete from users where id=?"
+	row, err := db.DB.Exec(query, id)
+	CheckError(err)
+	rowsAffected, err := row.RowsAffected()
+	CheckError(err)
+	if rowsAffected == 0 {
+		fmt.Println("No user found with that id")
+	} else {
+		fmt.Println("Deleted Succesfully")
+	}
+
 }
