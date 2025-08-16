@@ -1,4 +1,7 @@
+## GO-Learn-SQL
+Go database examples: Connect and perform CRUD operations (`Create`, `Read`, `Update`, `Delete`) with MySQL · PostgreSQL · SQLite
 
+>For MySQL
 ## Installation
 1. **Clone the Repository**
  ```bash
@@ -67,7 +70,9 @@ GO-LEARN-SQL/
 ├── go.sum                          # Go dependencies checksums
 └── readme.md                       # Project documentation
 ```
+---
+# Thank You for Checking Out This Repository!
+Your feedback is valuable! Please share your thoughts and suggestions for improvement via [GitHub Issues](https://github.com/alamgir-ahosain/go-learn-sql/issues).
 
-## Contributing
-Contributions, issues, and feature requests are welcome!
-Feel free to fork this project and submit a pull request.
+# Contributing  
+Contributions are welcome! Feel free to fork the repo and create a pull request.
