@@ -24,4 +24,7 @@ func RunApp() {
 	controllers.CheckError(er)
 	fmt.Println(users)
 
+	//Update user
+	controllers.UpdateUser(33,"Alamgir Hosain")
+
 }
