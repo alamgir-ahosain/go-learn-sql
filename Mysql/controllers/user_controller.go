@@ -18,6 +18,7 @@ func CheckError(err error) {
 }
 
 // _______________________CREATE________________________________
+
 func CreateUser(sid, name string, cgpa float32) {
 
 	query := "insert into users(sid,name,cgpa) values(?,?,?)"
@@ -39,6 +40,7 @@ func CreateUser(sid, name string, cgpa float32) {
 }
 
 // _______________________READ________________________________
+
 func ReadUserById(id int) (*models.User, error) {
 	var user models.User
 	query := db.DB.QueryRow("select * from users where id=?", id)
@@ -76,4 +78,21 @@ func ReadUserByField(sid string) ([]models.User, error) {
 		return nil, err
 	}
 	return users, nil
+}
+
+// _______________________UPDATE________________________________
+
+func UpdateUser(id int, NewName string) {
+
+	query := "update users set name=? where id=?"
+	row, err := db.DB.Exec(query, NewName, id)
+	CheckError(err)
+	rowsAffected, er := row.RowsAffected()
+	CheckError(er)
+	if rowsAffected == 0 {
+		fmt.Println("No user found with that ID ")
+	} else {
+		fmt.Println("User Updated Succesfully")
+
+	}
 }
