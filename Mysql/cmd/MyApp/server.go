@@ -27,4 +27,8 @@ func RunApp() {
 	//Update user
 	controllers.UpdateUser(33,"Alamgir Hosain")
 
+
+	//Delete user by ID
+	controllers.DeleteUser(3)
+
 }
