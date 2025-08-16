@@ -1,3 +1,49 @@
+
+## Installation
+1. **Clone the Repository**
+ ```bash
+https://github.com/alamgir-ahosain/go-learn-sql.git
+```
+2. **Install Dependencies**<br>
+ ```bash
+go get -u github.com/go-sql-driver/mysql
+```
+3. **Navigate into the prject:**
+```bash
+cd go-learn-sql/Mysql
+```
+
+##  Database Setup
+Login to MySQL and create the database and table:
+```sql
+CREATE DATABASE goDB;
+USE goDB;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT NOT NULL,
+    sid VARCHAR(128) NOT NULL,
+    name VARCHAR(128) NOT NULL,
+    cgpa DECIMAL(5,2),
+    PRIMARY KEY (`id`)
+);
+```
+## Run the Application:
+1. Start MySQL server.  
+2. Update database connection in `db/mysql.go`:  
+
+   i. With Password:  
+   ```go
+   dsn := "root:password@tcp(127.0.0.1:3306)/goDB"
+   ```
+   ii. Without Password<br>
+```go
+    dsn := "root:password@tcp(127.0.0.1:3306)/goDB"
+ ```
+3.Run the Project:
+```go
+go run main.go
+```
+   
 ##  Project Structure
 ```plaintext
 GO-LEARN-SQL/
@@ -22,16 +68,6 @@ GO-LEARN-SQL/
 └── readme.md                       # Project documentation
 ```
 
-##  Database Setup
-
-```sql
-CREATE DATABASE goDB;
-USE goDB;
-
-CREATE TABLE users (
-    id INT AUTO_INCREMENT NOT NULL,
-    sid VARCHAR(128) NOT NULL,
-    name VARCHAR(128) NOT NULL,
-    cgpa DECIMAL(5,2),
-    PRIMARY KEY (`id`)
-);
+## Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this project and submit a pull request.
