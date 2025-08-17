@@ -3,7 +3,7 @@ Go database examples: Connect and perform CRUD operations (`Create`, `Read`, `Up
 <br>
 
 * [MySQL README](README.md)
-* [PostgreSQL README](README_PostgreSQL.md)
+* [PostgreSQL README](README_PostgreSql.md)
 * [SQLite README](README_SQLite.md)
   <br>
 >For MySQL
