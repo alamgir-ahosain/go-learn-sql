@@ -73,7 +73,9 @@ GO-LEARN-SQL/
 │
 ├── go.mod                          # Go module definition
 ├── go.sum                          # Go dependencies checksums
-└── readme.md                       # Project documentation
+└── README.md                       # Project documentation for MySQL
+└── README_PostgreSql.md            # Project documentation for PostgreSQL
+└── README_SQLite.md                # Project documentation for SQLite
 ```
 ---
 # Thank You for Checking Out This Repository!
