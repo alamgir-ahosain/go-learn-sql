@@ -7,4 +7,5 @@ require (
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/lib/pq v1.10.9 // indirect
+	github.com/mattn/go-sqlite3 v1.14.32 // indirect
 )
