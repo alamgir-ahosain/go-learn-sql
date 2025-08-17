@@ -38,7 +38,7 @@ CREATE TABLE users (
 ## Run the Application:
 1. Start PostgreSQL server.  
 2. Update database connection in `db/postgreSql.go`
-3. Configure `.env` in `confif/.env`
+3. Configure `.env` in `config/.env`
 4. Run the Project:
 ```go
 go run main.go
