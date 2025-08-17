@@ -49,7 +49,7 @@ go run main.go
 
 GO-LEARN-SQL/
 
-├── Mysql/                          # For MySQL structure
+├── Mysql/                          # MySql project Structure
 ├── PostgreSQL/                     # PostgreSQL implementation
 │   ├── cmd/
 │   │   └── MyApp/
@@ -63,8 +63,7 @@ GO-LEARN-SQL/
 │   └── main.go                     # Main entry file for PostgreSQL
 │
 │
-├── SQLite/                         # (Future SQLite support)
-│
+├── SQLite/                         # SQLite project Structure
 ├── go.mod                          # Go module definition
 ├── go.sum                          # Go dependencies checksums
 └── README.md                       # Project documentation for MySQL

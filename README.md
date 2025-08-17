@@ -55,7 +55,7 @@ go run main.go
 ##  Project Structure
 ```plaintext
 GO-LEARN-SQL/
-├── Mysql/                          # MySQL implementation
+├── Mysql/                          # MySql project Structure
 │   ├── cmd/
 │   │   └── MyApp/
 │   │       └── server.go           # Entry point for MySQL server
@@ -67,9 +67,9 @@ GO-LEARN-SQL/
 │   │   └── user.go                 # User model definition
 │   └── main.go                     # Main entry file for MySQL
 │
-├── PostgreSQL/                     # (Future PostgreSQL support)
+├── PostgreSQL/                     # PostgreSQL project Structure
 │
-├── SQLite/                         # (Future SQLite support)
+├── SQLite/                         # SQLite project Structure
 │
 ├── go.mod                          # Go module definition
 ├── go.sum                          # Go dependencies checksums
